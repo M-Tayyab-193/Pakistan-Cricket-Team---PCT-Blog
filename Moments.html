@@ -1,115 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/images/icon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/icon.ico" type="image/x-icon" />
     <title>PCT - Memorable Moments</title>
-</head>
-<style>
+  </head>
+  <style>
     .bg {
-        background-image: url('/images/bg.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 100vh;
-        background-color: rgba(0, 0, 0, 0.4);
-        background-blend-mode: overlay;
-        margin: 0px;
-        padding: 0px;
+      background-image: url("/images/bg.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      background-color: rgba(0, 0, 0, 0.4);
+      background-blend-mode: overlay;
+      margin: 0px;
+      padding: 0px;
     }
 
     .header {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        height: 60px;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 60px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     }
 
     .header img {
-        width: 67px;
-        height: 55px;
-        padding-left: 10px;
-        margin-top: 2px;
-        cursor: pointer;
+      width: 67px;
+      height: 55px;
+      padding-left: 10px;
+      margin-top: 2px;
+      cursor: pointer;
     }
 
     .nav {
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        margin-top: 20px;
-        margin-right: 40px;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      margin-top: 20px;
+      margin-right: 40px;
     }
 
     .nav li {
-
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        margin: 2px 0px;
-
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      margin: 2px 0px;
     }
 
     .nav li a {
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        font-size: 20px;
-        padding: 10px;
-        margin: 10px;
-        transition: color 0.3s ease;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      padding: 10px;
+      margin: 10px;
+      transition: color 0.3s ease;
     }
 
     .nav li a:hover {
-        color: rgb(146, 225, 28);
-        border-bottom: 3px solid rgb(146, 225, 28);
-
+      color: rgb(146, 225, 28);
+      border-bottom: 3px solid rgb(146, 225, 28);
     }
 
     .nav a.active {
-        color: rgb(146, 225, 28);
-        border-bottom: 3px solid rgb(146, 225, 28);
+      color: rgb(146, 225, 28);
+      border-bottom: 3px solid rgb(146, 225, 28);
     }
+    .Videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 20px auto;
+}
+.Videos p,h4{
+    display: inline-block;
+    color: white ;
+    font-weight: bold;
+    font-family: Arial,
+     Helvetica, sans-serif;
+}
 
+
+.Videos iframe {
+    max-width: 100%;
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}
     .footer {
-        position: absolute;
-        bottom: 0;
-        text-align: center;
-        box-shadow: 1px 1px 15px rgba(0, 0, 0, 1);
-        width: 100%;
-        color: white;
-        font-family: "Poppins", serif;
-        font-weight: 700;
-        font-size: 17px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
+      position: relative;
+      bottom: 0;
+      text-align: center;
+      box-shadow: 1px 1px 15px rgba(0, 0, 0, 1);
+      width: 100%;
+      color: white;
+      font-family: "Poppins", serif;
+      font-weight: 700;
+      font-size: 17px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
     }
-</style>
+  </style>
 
-<body class="bg">
+  <body class="bg">
     <header>
-        <div class="header">
-            <img src="/images/logo.png" alt="">
-            <nav>
-                <ul class="nav">
-                    <li><a href="/Home.html" target="_blank">Home</a></li>
-                    <li><a href="/LatestNews.Html" target="_blank">Latest News</a></li>
-                    <li><a href="/Moments.html" class="active">Memorable Moments</a></li>
-                    <li><a href="/Contact.html" target="_blank">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="header">
+        <img src="/images/logo.png" alt="" />
+        <nav>
+          <ul class="nav">
+            <li><a href="/Home.html">Home</a></li>
+            <li><a href="/LatestNews.Html">Latest News</a></li>
+            <li>
+              <a href="/Moments.html" class="active">Memorable Moments</a>
+            </li>
+            <li><a href="/Contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
+      <p style="color: white; font-size: x-large; font-weight: bold ;text-align: center;">
+        Let's Walk through some memorable moments of Pakistan Cricket Team
+      </p>
+      <div class ="Videos">
+        
+        <p ">Pakistan Vs England World Cup 1992</p>
+        <h4>Pakistan Wins</h4>
+        <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/TbUTMiqI87E" 
+    title="World Cup 1992" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+        <p ">Pakistan Vs Aus T20-World Cup Semi-final</p>
+        <h4>Austrailia Wins</h4>
+        <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/NGy_hgtjLBU" 
+    title="Pak vs Aus" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+<p ">Pakistan Vs India Champions Trophy</p>
+<h4>Pakistan Wins</h4>
+<iframe 
+width="560" 
+height="315" 
+src="https://www.youtube.com/embed/Q4weqLXtcpc&t=22s" 
+title="Champions Trophy" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen>
+</iframe>
+<p ">Pakistan Vs AFG T20</p>
+<h4>Pakistan Wins</h4>
+<iframe 
+width="560" 
+height="315" 
+src="https://www.youtube.com/embed/kAx8umY93oc" 
+title="Pak vs AFG t20 1" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen>
+</iframe>
+<p ">Pakistan Vs AFG T20</p>
+<h4>Pakistan Wins</h4>
+<iframe 
+width="560" 
+height="315" 
+src="https://www.youtube.com/embed/TEdmjBHFd_A" 
+title="Pak vs AFG t20" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen>
+</iframe>
 
+      </div>
     </main>
     <footer class="footer">
-        <p>&copy; 2025 Pakistan Cricket Team. All Rights Reserved.</p>
+      <p>&copy; 2025 Pakistan Cricket Team. All Rights Reserved.</p>
     </footer>
-</body>
-
+  </body>
 </html>
