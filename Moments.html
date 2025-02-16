@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/icon.ico" type="image/x-icon">
+    <title>PCT - Memorable Moments</title>
+</head>
+<style>
+    .bg {
+        background-image: url('/images/bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        background-color: rgba(0, 0, 0, 0.4);
+        background-blend-mode: overlay;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 60px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+
+    }
+
+    .header img {
+        width: 67px;
+        height: 55px;
+        padding-left: 10px;
+        margin-top: 2px;
+        cursor: pointer;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin-top: 20px;
+        margin-right: 40px;
+    }
+
+    .nav li {
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin: 2px 0px;
+
+    }
+
+    .nav li a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        padding: 10px;
+        margin: 10px;
+        transition: color 0.3s ease;
+    }
+
+    .nav li a:hover {
+        color: rgb(146, 225, 28);
+        border-bottom: 3px solid rgb(146, 225, 28);
+
+    }
+
+    .nav a.active {
+        color: rgb(146, 225, 28);
+        border-bottom: 3px solid rgb(146, 225, 28);
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 1);
+        width: 100%;
+        color: white;
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        font-size: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+</style>
+
+<body class="bg">
+    <header>
+        <div class="header">
+            <img src="/images/logo.png" alt="">
+            <nav>
+                <ul class="nav">
+                    <li><a href="/Home.html" target="_blank">Home</a></li>
+                    <li><a href="/LatestNews.Html" target="_blank">Latest News</a></li>
+                    <li><a href="/Moments.html" class="active">Memorable Moments</a></li>
+                    <li><a href="/Contact.html" target="_blank">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 Pakistan Cricket Team. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
