@@ -4,112 +4,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/images/icon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/icon.ico" type="image/x-icon">
     <title>PCT - Latest News</title>
+    <style>
+        /* Background Styling */
+        body {
+            background-image: url('./images/bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            background-color: rgba(0, 0, 0, 0.4);
+            background-blend-mode: overlay;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        /* Header Styling */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 60px;
+            background: rgb(23, 55, 10);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+            padding: 0 20px;
+        }
+
+        .header img {
+            width: 67px;
+            height: 55px;
+            cursor: pointer;
+        }
+
+        /* Navigation Menu */
+        .nav {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav li {
+            margin: 0 15px;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            padding: 10px;
+        }
+
+        .nav li a:hover,
+        .nav a.active {
+            color: rgb(146, 225, 28);
+            border-bottom: 3px solid rgb(146, 225, 28);
+        }
+
+        /* News Section */
+        .news-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .news-card {
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            margin: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            width: 350px;
+            text-align: center;
+        }
+
+        .news-card img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px white;
+        }
+
+        .news-card h3 {
+            margin: 10px 0;
+            font-size: 20px;
+            color: rgb(146, 225, 28);
+        }
+
+        .news-card p {
+            font-size: 16px;
+            color: #ddd;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            background: rgb(23, 55, 10);
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+        }
+    </style>
 </head>
-<style>
-    .bg {
-        background-image: url('/images/bg.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 100vh;
-        background-color: rgba(0, 0, 0, 0.4);
-        background-blend-mode: overlay;
-        margin: 0px;
-        padding: 0px;
-    }
 
-    .header {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        height: 60px;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-
-    }
-
-    .header img {
-        width: 67px;
-        height: 55px;
-        padding-left: 10px;
-        margin-top: 2px;
-        cursor: pointer;
-    }
-
-    .nav {
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        margin-top: 20px;
-        margin-right: 40px;
-    }
-
-    .nav li {
-
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        margin: 2px 0px;
-
-    }
-
-    .nav li a {
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        font-size: 20px;
-        padding: 10px;
-        margin: 10px;
-        transition: color 0.3s ease;
-    }
-
-    .nav li a:hover {
-        color: rgb(146, 225, 28);
-        border-bottom: 3px solid rgb(146, 225, 28);
-
-    }
-
-    .nav a.active {
-        color: rgb(146, 225, 28);
-        border-bottom: 3px solid rgb(146, 225, 28);
-    }
-
-    .footer {
-        position: absolute;
-        bottom: 0;
-        text-align: center;
-        box-shadow: 1px 1px 15px rgba(0, 0, 0, 1);
-        width: 100%;
-        color: white;
-        font-family: "Poppins", serif;
-        font-weight: 700;
-        font-size: 17px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-    }
-</style>
-
-<body class="bg">
+<body>
+    <!-- Header Section -->
     <header>
         <div class="header">
-            <img src="/images/logo.png" alt="">
+            <img src="./images/logo.png" alt="PCT Logo">
             <nav>
                 <ul class="nav">
+<<<<<<< HEAD
+                    <li><a href="./Home.html" target="_blank">Home</a></li>
+                    <li><a href="./LatestNews.html" class="active">Latest News</a></li>
+                    <li><a href="./Moments.html" target="_blank">Memorable Moments</a></li>
+                    <li><a href="./Contact.html" target="_blank">Contact Us</a></li>
+=======
                     <li><a href="/Home.html" >Home</a></li>
                     <li><a href="/LatestNews.Html" class="active">Latest News</a></li>
                     <li><a href="Moments.html" >Memorable Moments</a></li>
                     <li><a href="/Contact.html" >Contact Us</a></li>
+>>>>>>> 8af06c6f57498d77eb2b1788714d73c8678a2583
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
 
+    <!-- Main Content -->
+    <main>
+        <h1 style="text-align: center; margin-top: 20px; color: rgb(146, 225, 28);">Pakistan Cricket Team - Latest News</h1>
+
+        <div class="news-container">
+            <!-- News Article 1 -->
+            <div class="news-card">
+                <img src="https://a1.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1472994_1296x518.jpg&w=1296&h=518&scale=crop&cquality=40&location=origin&format=jpg"
+                    alt="Pakistan Cricket Match">
+                <h3>Pakistan boosted by Rizwan's form but bowling remains a concern</h3>
+                <p>The hosts are also perhaps without the spin pedigree they need in these conditions.</p>
+                <a href="https://www.espn.in/cricket/story/_/id/43866294/champons-trophy-2025-pakistan-boosted-rizwan-form-bowling-remains-concern">Click here</a>
+
+            </div>
+
+            <!-- News Article 2 -->
+            <div class="news-card">
+                <img src="https://a2.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1473219_1296x518.jpg&w=1296&h=518&scale=crop&cquality=40&location=origin&format=jpg" alt="Babar Azam Century">
+                <h3>Stats - Babar joins Amla as fastest to 6000 ODI runs, pushing Kohli to No. 3</h3>
+                <p>After the innings in which he got to 6000, Babar's batting average stood at 55.73 - the highest for any batter at that point</p>
+                <a href="https://www.espn.in/cricket/story/_/id/43842526/stats-babar-azam-joins-hashim-amla-fastest-6000-odi-runs-pushing-virat-kohli-no-3">Click here</a>
+            </div>
+
+            <!-- News Article 3 -->
+            <div class="news-card">
+                <img src="https://a3.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1466637_1296x518.jpg&w=1296&h=518&scale=crop&cquality=40&location=origin&format=jpg" alt="Shaheen Afridi Bowling">
+                <h3>Champions Trophy winners to get US$2.24 million as prize money</h3>
+                <p>The total prize pot has gone up by 53% to $6.9 million<br></p>
+                <a href="https://www.espn.in/cricket/story/_/id/43838127/icc-champions-trophy-2025-winners-get-us224-million-prize-money">Click here</a>
+
+            </div>
+
+            <div class="news-card">
+                <img src="https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1438170_1296x518.jpg&w=1296&h=518&scale=crop&cquality=40&location=origin&format=jpg" alt="Shaheen Afridi Bowling">
+                <h3>Rizwan: 'Babar still contributing valuably if you don't judge him by extreme expectations' </h3>
+                <p>The Pakistan captain said Babar had been promoted to open as they wanted their most technically sound batter at the top of the order<br></p>
+                <a href="https://www.espn.in/cricket/story/_/id/43823758/mohammad-rizwan-babar-azam-contributing-valuably-dont-judge-extreme-expectations">Click here</a>
+
+            </div>
+
+            <div class="news-card">
+                <img src="https://a2.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1472954_1296x518.jpg&w=1296&h=518&scale=crop&cquality=40&location=origin&format=jpg" alt="Shaheen Afridi Bowling">
+                <h3>Afridi fined and handed demerit point for on-field clash with Breetzke.</h3>
+                <p>Saud Shakeel and Kamran Ghulam were also pulled up for celebrating too close to Temba Bavuma after his dismissal<br></p>
+                <a href="https://www.espn.in/cricket/story/_/id/43823086/pakistan-tri-series-pak-vs-sa-shaheen-afridi-fined-handed-demerit-point-field-clash-matthew-breetzke">Click here</a>
+
+            </div>
+
+            <div class="news-card">
+                <img src="https://a1.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1466220_1296x518.jpg&w=1296&h=518&scale=crop&cquality=40&location=origin&format=jpg" alt="Shaheen Afridi Bowling">
+                <h3>Saim Ayub ruled out of Champions Trophy</h3>
+                <p>He is still recovering from an ankle injury picked up in January and remains a doubt for the white-ball tour of New Zealand after the Champions Trophy.<br></p>
+                <a href="https://www.espn.in/cricket/story/_/id/43731205/saim-ayub-ruled-champions-trophy-2025-pcb-confirms">Click here</a>
+
+            </div>
+
+            <div class="news-card">
+                <img src="https://a.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1470639_1296x729.jpg&w=920&h=518&scale=crop&cquality=80&location=origin&format=jpg" alt="Shaheen Afridi Bowling">
+                <h3>Masood wants turning pitches in Pakistan domestic cricket to give batters 'exposure'</h3>
+                <p>Pakistan captain Shan Masood said he expected the team to continue their recent experiment of heavily turning tracks at home<br></p>
+                <a href="https://www.espn.in/cricket/story?id=43582562&_slug_=pak-vs-wi-2025-shan-masood-wants-turning-pitches-pakistan-domestic-cricket-give-batters-exposure">Click here</a>
+
+            </div>
+
+            <div class="news-card">
+                <img src="https://a.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1324990_1296x729.jpg&w=920&h=518&scale=crop&cquality=80&location=origin&format=jpg" alt="Shaheen Afridi Bowling">
+                <h3>Where have all the wristspinners gone in Test cricket?</h3>
+                <p>Wristspin has given men's Test cricket two of its top four wicket-takers, but its footprint over recent years has been marginal.<br></p>
+                <a href="https://www.espn.in/cricket/story?id=43805334&_slug_=where-all-wristspinners-gone-test-cricket">Click here</a>
+
+            </div>
+        </div>
     </main>
+
+    <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2025 Pakistan Cricket Team. All Rights Reserved.</p>
     </footer>
 </body>
-
 </html>
