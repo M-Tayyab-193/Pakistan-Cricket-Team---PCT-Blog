@@ -89,6 +89,65 @@
         align-items: center;
         background-color: transparent;
     }
+    main{
+        font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+    }
+    
+    .contact_us-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 40%;
+        }
+
+        .contact_us-box h2 {
+            margin-bottom: 10px;
+        }
+
+        .contact_us-box input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; 
+        }
+        .contact_us-box input[type="name"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; 
+        }
+        .contact_us-box textarea{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; 
+        }
+        .contact_us-box button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact_us-box button:hover {
+            background: #218838;
+        }
 </style>
 
 <body class="bg">
@@ -105,9 +164,25 @@
             </nav>
         </div>
     </header>
-
     <main>
-
+        <div class="contact_us-box">
+            <h2>Contact Us</h2>
+            <p>We value your feedback! 📝 Share your thoughts and help us improve your experience. Your input makes a difference—fill out the form now! 🚀</p>
+            <form>
+                    <input type="name" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter your email" required>
+                    <label for="feedback" style="text-align: left;">Your Message:</label><br>
+                    <textarea id="feedback" name="feedback" rows="4" cols="30" placeholder="Write your feedback here..."></textarea>
+                
+                
+                <div style="text-align: left; margin-bottom: 20px;">
+                    <label>
+                        <input type="checkbox" name="Terms_and_conds" value="Terms and Conds" required> I have read and accept the terms and conditions 
+                    </label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </main>
     <footer class="footer">
         <p>&copy; 2025 Pakistan Cricket Team. All Rights Reserved.</p>
