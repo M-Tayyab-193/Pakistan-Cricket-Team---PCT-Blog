@@ -76,12 +76,13 @@
         border-bottom: 3px solid rgb(146, 225, 28);
     }
 
-    .result {
+    .Result {
         height: 70vh;
         width: 60%;
+        margin-right: 4%;
     }
 
-    .result h1 {
+    .Result h1 {
         color: white;
         font-size: 50px;
         margin-top: 50px;
@@ -110,6 +111,7 @@
     main {
         display: flex;
         flex: 1;
+        flex-wrap: wrap;
         position: relative;
         min-height: 110vh;
     }
@@ -172,7 +174,7 @@
 
     }
 
-    .item .border {
+    .item .Output {
         font-size: 13px;
         font-weight: bold;
     }
@@ -193,36 +195,138 @@
     }
 
 
-    .stats {
+    .line {
         border-left: 2px solid white;
         height: 100vh;
-        margin-left: 6%;
+        margin-left: 2%;
         margin-top: 1%;
         box-shadow: 2px 2px 10px rgb(255, 252, 252);
         width: 0.5px;
+
     }
 
-    .history {
+    .History p {
         color: white;
         font-size: 15px;
         font-family: "Poppins", serif;
         font-weight: 600;
-        text-align: center;
-        margin-left: 2%;
+        text-align: left;
+        margin-left: 4%;
         text-shadow: 2px 2px 15px rgb(0, 0, 0);
+        width: 100%;
 
     }
 
-    .shorts-container {
+    .yt-video {
         margin: 2% auto 2% auto;
+        display: flex;
+        flex-direction: column;
+        height: 680px;
     }
 
-    .shorts-container iframe {
+    .yt-video iframe {
         border: 2px transparent;
         border-radius: 40px;
         box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.934);
 
     }
+
+    .yt-video span {
+        color: white;
+        font-size: 20px;
+        margin: 2px 0 25px 0;
+        font-family: "Poppins", serif;
+        font-weight: bold;
+        text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.5);
+        text-align: center;
+    }
+
+    .Review {
+        margin: 0 1% 0 1%;
+        width: 62%;
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Review h1 {
+        color: white;
+        font-size: 50px;
+        margin-top: 5%;
+        font-family: "Poppins", serif;
+        font-weight: bold;
+        margin-left: 35%;
+        text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.5);
+
+    }
+
+    .Review p {
+        color: white;
+        font-size: 15px;
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        text-align: left;
+        margin: 0 1% 0 2%;
+        text-shadow: 2px 2px 15px rgb(0, 0, 0);
+        width: 100%;
+
+    }
+    .Review img{
+        margin: 3% auto 0 auto;
+        width: 65%;
+        border: 2px transparent;
+        border-radius: 40px;
+        box-shadow: 2px 2px 15px rgb(0, 0, 0);
+    }
+    .Review aside h3{
+        color: white;
+        font-size: 30px;
+        margin-top: 2%;
+        font-family: "Poppins", serif;
+        font-weight: bold;
+        margin-left: 2%;
+        text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.5);
+    }
+
+    .Review aside p {
+        color: white;
+        font-size: 15px;
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        text-align: center;
+        margin: 0 1% 0 4%;
+        padding-bottom: 10px;
+        text-shadow: 2px 2px 15px rgb(99, 219, 13);
+        width: 100%;
+
+    }
+
+    .Ranking {
+        margin: 2% auto 2% auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+        width: 550px;
+    }
+
+    .Ranking span {
+        color: white;
+        font-size: 20px;
+        margin: 2px 0 25px 0;
+        font-family: "Poppins", serif;
+        font-weight: bold;
+        text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.5);
+        text-align: center;
+    }
+
+    .Ranking img {
+        width: 70%;
+        border: 2px transparent;
+        border-radius: 40px;
+        box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.934);
+    }
+    
 </style>
 
 <body class="bg">
@@ -241,12 +345,12 @@
     </header>
 
     <main>
-        <section class="result">
-            <div class="">
+        <section class="Result">
+            <div class="History">
                 <h1>
                     PCT History
                 </h1>
-                <p class="history">
+                <p>
                     Pakistan's cricket journey began in 1947 after gaining independence, inheriting the sport from its
                     colonial past. Their first major breakthrough came in 1954 with a historic win against England at
                     The Oval. Over the years, legends like Abdul Hafeez Kardar, Fazal Mahmood, and Hanif Mohammad laid
@@ -288,7 +392,7 @@
                         </div>
                         <span>(47.5/50 ov) 252</span>
                     </div>
-                    <span class="border">New Zealand won by 78 runs</span>
+                    <span class="Output">New Zealand won by 78 runs</span>
                 </div>
                 <div class=item>
                     <p>
@@ -308,7 +412,7 @@
                         </div>
                         <span>(47.5/50 ov) 252</span>
                     </div>
-                    <span class="border">New Zealand won by 78 runs</span>
+                    <span class="Output">New Zealand won by 78 runs</span>
                 </div>
                 <div class=item>
                     <p>
@@ -328,7 +432,7 @@
                         </div>
                         <span>(47.5/50 ov) 252</span>
                     </div>
-                    <span class="border">New Zealand won by 78 runs</span>
+                    <span class="Output">New Zealand won by 78 runs</span>
                 </div>
                 <div class=item>
                     <p>
@@ -348,7 +452,7 @@
                         </div>
                         <span>(47.5/50 ov) 252</span>
                     </div>
-                    <span class="border">New Zealand won by 78 runs</span>
+                    <span class="Output">New Zealand won by 78 runs</span>
                 </div>
                 <div class=item>
                     <p>
@@ -368,7 +472,7 @@
                         </div>
                         <span>(47.5/50 ov) 252</span>
                     </div>
-                    <span class="border">New Zealand won by 78 runs</span>
+                    <span class="Output">New Zealand won by 78 runs</span>
                 </div>
                 <div class=item>
                     <p>
@@ -388,7 +492,7 @@
                         </div>
                         <span>(47.5/50 ov) 252</span>
                     </div>
-                    <span class="border">New Zealand won by 78 runs</span>
+                    <span class="Output">New Zealand won by 78 runs</span>
                 </div>
                 <div class=item>
                     <p>
@@ -408,7 +512,7 @@
                         </div>
                         <span>(47.5/50 ov) 252</span>
                     </div>
-                    <span class="border">New Zealand won by 78 runs</span>
+                    <span class="Output">New Zealand won by 78 runs</span>
                 </div>
                 <div class=item>
                     <p>
@@ -428,19 +532,42 @@
                         </div>
                         <span>(47.5/50 ov) 252</span>
                     </div>
-                    <span class="border">New Zealand won by 78 runs</span>
+                    <span class="Output">New Zealand won by 78 runs</span>
                 </div>
             </div>
         </section>
-        <section class="stats"></section>
+        <section class="line"></section>
 
-        <div class="shorts-container">
-
+        <div class="yt-video">
+            <span>PCT Motivating Edit</span>
             <iframe width="360" height="640" src="https://www.youtube.com/embed/s8DTuMyJP4A?autoplay=1&mute=1"
                 title="YouTube Shorts" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
             </iframe>
+        </div>
+        <div class="Review">
+            <h1>
+                Our Review
+            </h1>
+            <p>The Pakistan Cricket Team is currently struggling, with performances falling below
+                expectations. Once renowned for its formidable pace attack, the team has lost its bowling dominance.
+                Inconsistencies in team selection further add to their challenges. Moreover, two crucial qualities—match
+                awareness and physical fitness—seem to be lacking, significantly affecting their overall performance.
+                However, despite these setbacks, Pakistan’s cricketing talent and potential remain undeniable. With the
+                right strategies and improvements, they have the ability to make a strong comeback</p>
+            <img src="/images/team.jpg" alt="">
+            
+            <aside>
+                <h3>Did You Know?</h3>
+                <p>"Pakistan once had one of the most feared pace attacks in the world."</p>
+            </aside>
+
+        </div>
+        <section class="line"></section>
+        <div class="Ranking">
+            <span>Once Upon a Time...&nbsp;&nbsp;&nbsp; :&#40;</span>
+            <img src="/images/ranking.webp" alt="">
         </div>
 
     </main>
